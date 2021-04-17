@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Stepper  Start -->
+    <div class="container-fluid bg-white mb-5" style="overflow-x: scroll;">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-3" style="padding:0px;">
+                <ul class="stepper">
+                    <li class="stepper__item current">
+                        <div class="numberCircle currentCircle">1</div><span>Teslimat Adresi</span>
+                    </li>
+                    <li class="stepper__item ">
+                        <div class="numberCircle">2</div><span>Vekalet & Bağış</span>
+                    </li>
+                    <li class="stepper__item">
+                        <div class="numberCircle">3</div><span>Teslimat Zamanı</span>
+                    </li>
+                    <li class="stepper__item">
+                        <div class="numberCircle">4</div><span>Ödeme Şekli</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Stepper End -->
+    <!-- Content Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row d-lg-inline-block mb-2">
+                    <span class="addressTitle me-2">Adres Seçimi</span>
+                    <span class="deliveryTitle">Teslimat Bölgeniz: Meclis, Sancaktepe, İstanbul</span>
+                </div>
+                <div class="row">
+                    <!-- Tabs  Start -->
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active col-6" id="nav-letsBring-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-letsBring" type="button" role="tab" aria-controls="nav-letsBring"
+                                aria-selected="true"><i class="fas fa-truck"></i><span class="ms-2 fs-5 fs-lg-2">Size
+                                    Getirelim</span></button>
+                            <button class="nav-link col-6" id="nav-buyStore-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-buyStore" type="button" role="tab" aria-controls="nav-buyStore"
+                                aria-selected="false"><i class="fas fa-store"></i><span class="ms-2 fs-5 fs-lg-2">Mağazadan
+                                    Alın</span></button>
+                        </div>
+                    </nav>
+                    <!-- Tabs End -->
+                    <!-- Tab Content Start -->
+                    <div class="tab-content" id="nav-tabContent">
+                        <!--Lets Bring Start  -->
+                        <div class="tab-pane fade show active bg-white p-4" id="nav-letsBring" role="tabpanel"
+                            aria-labelledby="nav-letsBring-tab">
+                            <div class="row">
+                                <!-- Delivery Adress Info Start-->
+                                <div class="col-lg-6">
+                                    <div class="row"><span class="adressInfo">Teslimat Adresi Bilgileri</span>
+                                    </div>
+                                    <div class="row p-2">
+                                        <div class="card selectedCard mt-lg-3">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div class="custom-radios">
+                                                            <div>
+                                                                <input type="radio" id="deliveryAdress-1"
+                                                                    name="deliveryAdress" value="deliveryAdress-1"
+                                                                    checked>
+                                                                <label for="deliveryAdress-1">
+                                                                    <span>
+                                                                        <img class="check-icon"
+                                                                            src="assets/img/check-mark.svg"
+                                                                            alt="Checked Icon">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="d-inline float-end editDelete">
+                                                            <a href="#" class="me-2">Düzenle</a>
+                                                            <a href="#">Sil</a>
+                                                        </div>
+                                                        <h5 class="card-title d-inline titleAddress">Ev Sancaktepe</h5>
+                                                        <div class="card-text mt-2 phoneNumber">5336139190</div>
+                                                        <div class="card-text mt-1 address">Cemal Gürsel Cad Suryapi
+                                                            Mahalle
+                                                            No:109 A4 Blok No 23 Meclis Mh./Sancaktepe/İstanbul</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <div class="d-grid gap-2 col-lg-8 mx-auto">
+                                                        <button class="btn blueBtn selectedButton " type="button">Bu
+                                                            adresi seçtiniz</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <div class="card mt-lg-3">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div class="custom-radios">
+                                                            <div>
+                                                                <input type="radio" id="deliveryAdress-2"
+                                                                    name="deliveryAdress" value="deliveryAdress-2">
+                                                                <label for="deliveryAdress-2">
+                                                                    <span>
+                                                                        <img class="check-icon"
+                                                                            src="assets/img/check-mark.svg"
+                                                                            alt="Checked Icon">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="d-inline float-end editDelete">
+                                                            <a href="#" class="me-2">Düzenle</a>
+                                                            <a href="#">Sil</a>
+                                                        </div>
+                                                        <h5 class="card-title d-inline titleAddress">Buyaka Ofis</h5>
+                                                        <div class="card-text mt-2 phoneNumber">5336139190</div>
+                                                        <div class="card-text mt-1 address">Cemal Gürsel Cad. Suryapi
+                                                            Mahalle No:109 A4 Blok No 23
+                                                            Meclis Mh./Sancaktepe/İstanbul</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <div class="d-grid gap-2 col-lg-8 mx-auto">
+                                                        <button class="btn blueBtn " type="button">Bu
+                                                            adresi seçiniz</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Delivery Adress Info End-->
+                                <!-- Invoice Adress Info Start-->
+                                <div class="col-lg-6 mt-3 mt-lg-0">
+                                    <div class="row"><span class="adressInfo">Fatura Adresi Bilgileri</span>
+                                    </div>
+                                    <div class="row p-2">
+                                        <div class="card mt-lg-3">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div class="custom-radios">
+                                                            <div>
+                                                                <input type="radio" id="invoiceAddress-1"
+                                                                    name="invoiceAddress" value="invoiceAddress-1">
+                                                                <label for="invoiceAddress-1">
+                                                                    <span>
+                                                                        <img class="check-icon"
+                                                                            src="assets/img/check-mark.svg"
+                                                                            alt="Checked Icon">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="d-inline float-end editDelete">
+                                                            <a href="#" class="me-2">Düzenle</a>
+                                                            <a href="#">Sil</a>
+                                                        </div>
+                                                        <h5 class="card-title d-inline titleAddress">Ev Sancaktepe</h5>
+                                                        <div class="card-text mt-2 phoneNumber">5336139190</div>
+                                                        <div class="card-text mt-1 address">Cemal Gürsel Cad Suryapi
+                                                            Mahalle
+                                                            No:109 A4 Blok No 23 Meclis Mh./Sancaktepe/İstanbul</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <div class="d-grid gap-2 col-lg-8 mx-auto">
+                                                        <button class="btn blueBtn" type="button">Fatura adresi
+                                                            olarak seçiniz</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p-2">
+                                        <div class="card selectedCard mt-lg-3">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div class="custom-radios">
+                                                            <div>
+                                                                <input type="radio" id="invoiceAddress-2"
+                                                                    name="invoiceAddress" value="invoiceAddress-2"
+                                                                    checked>
+                                                                <label for="invoiceAddress-2">
+                                                                    <span>
+                                                                        <img class="check-icon"
+                                                                            src="assets/img/check-mark.svg"
+                                                                            alt="Checked Icon">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="d-inline float-end editDelete">
+                                                            <a href="#" class="me-2">Düzenle</a>
+                                                            <a href="#">Sil</a>
+                                                        </div>
+                                                        <h5 class="card-title d-inline titleAddress">Buyaka Ofis</h5>
+                                                        <div class="card-text mt-2 phoneNumber">5336139190</div>
+                                                        <div class="card-text mt-1 address">Cemal Gürsel Cad. Suryapi
+                                                            Mahalle No:109 A4 Blok No 23
+                                                            Meclis Mh./Sancaktepe/İstanbul</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <div class="d-grid gap-2 col-lg-8 mx-auto">
+                                                        <button class="btn blueBtn selectedButton " type="button">Fatura
+                                                            adresi
+                                                            olarak seçtiniz</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Invoice Adress Info End-->
+                            </div>
+                        </div>
+                        <!--Lets Bring End  -->
+                        <!-- Buy Store Start  -->
+                        <div class="tab-pane fade bg-white p-4" id="nav-buyStore" role="tabpanel"
+                            aria-labelledby="nav-buyStore-tab">
+                            <div class="row">
+                                <!-- Store Adress Info -->
+                                <div class="col-lg-6">
+                                    <div class="row d-inline-block">
+                                        <span class="adressInfo">Teslim Alabileceğiniz Mağazalar</span>
+                                        <button type="button" class="btn btn-outline-primary blueOutlineBtn float-xl-end ms-xl-0 ms-2"
+                                            data-bs-toggle="modal" data-bs-target="#chooseDiffrentShop">Farklı
+                                            Bir Mağaza Seç</button>
+                                    </div>
+                                    <div class="row p-2">
+                                        <div class="card selectedCard mt-lg-3">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div class="custom-radios">
+                                                            <div>
+                                                                <input type="radio" id="storeDeliveryAdress-1"
+                                                                    name="storeDeliveryAdress"
+                                                                    value="storeDeliveryAdress-1" checked>
+                                                                <label for="storeDeliveryAdress-1">
+                                                                    <span>
+                                                                        <img class="check-icon"
+                                                                            src="assets/img/check-mark.svg"
+                                                                            alt="Checked Icon">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="d-inline float-end editDelete">
+                                                            <a href="#" class="me-2">Haritada Gör</a>
+                                                        </div>
+                                                        <h5 class="card-title d-inline mb-1 titleAddress">Sancaktepe
+                                                            Mağazası</h5>
+                                                        <div class="card-text mt-2 address">Turkey, İstanbul,
+                                                            Sancaktepe, Emek Mah., Ordu Cad., 12</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <div class="d-grid gap-2 col-lg-8 mx-auto">
+                                                        <button class="btn blueBtn selectedButton" type="button">Bu
+                                                            mağazayı
+                                                            seçtiniz</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Store Adress End -->
+                                <!-- Invoice Adress Start -->
+                                <div class="col-lg-6 mt-3 mt-lg-0">
+                                    <div class="row"><span class="adressInfo">Fatura Adresi Bilgileri</span>
+                                    </div>
+                                    <div class="row p-2">
+                                        <div class="card mt-4">
+                                            <div class="card-body d-flex flex-column">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div class="custom-radios">
+                                                            <div>
+                                                                <input type="radio" id="storeInvoiceAddress-1"
+                                                                    name="storeInvoiceAddress"
+                                                                    value="storeInvoiceAddress-1">
+                                                                <label for="storeInvoiceAddress-1">
+                                                                    <span>
+                                                                        <img class="check-icon"
+                                                                            src="assets/img/check-mark.svg"
+                                                                            alt="Checked Icon">
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10">
+                                                        <div class="d-inline float-end editDelete">
+                                                            <a href="#" class="me-2">Düzenle</a>
+                                                            <a href="#">Sil</a>
+                                                        </div>
+                                                        <h5 class="card-title d-inline titleAddress">Ev Sancaktepe</h5>
+                                                        <div class="card-text mt-2 phoneNumber">5336139190</div>
+                                                        <div class="card-text mt-1 address">Cemal Gürsel Cad Suryapi
+                                                            Mahalle
+                                                            No:109 A4 Blok No 23 Meclis Mh./Sancaktepe/İstanbul</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-auto">
+                                                    <div class="d-grid gap-2 col-lg-8 mx-auto">
+                                                        <button class="btn blueBtn  align-bottom" type="button">Fatura
+                                                            adresi
+                                                            olarak seçiniz</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Invoice Adress End -->
+                            </div>
+                        </div>
+                        <!-- Buy Store End  -->
+                    </div>
+                    <!-- Tab Content End -->
+                </div>
+            </div>
+            <!-- Order Summary  Start -->
+            <div class="col-lg-4 pe-lg-5 mt-lg-0 mt-3">
+                <div class="card mt-lg-3 mt-xs-0" style="min-height:19rem;">
+                    <div class="card-body" style="box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);">
+                        <div class="row">
+                            <div class="col-6"><span class="card-title summaryOrder d-lg-inline-block">Sipariş
+                                    Özeti</span></div>
+                            <div class="col-6"><span class="itemsInCart float-end mt-1">Sepetinizdeki Ürünler (2)</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-8 tax"> <span>Ürün Tutarı (KDV Dahil)</span></div>
+                            <div class="col-4 taxPrice"><span class="float-end">1.200,00 TL</span></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-6"><span class="deliveryFree">Teslimat Ücreti</span></div>
+                            <div class="col-6"><span class="float-end deliveryFreePrice">9,99 TL</span></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-6"><span class="plasticBag">Plastik Poşet</span></div>
+                            <div class="col-6"><span class="float-end plasticBagFreePrice">0,25 TL</span></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-6"><span class="specialDiscount">CarrefourSA İndirimi</span></div>
+                            <div class="col-6"><span class="float-end plasticBagFreePrice">-3,80 TL</span></div>
+                        </div>
+                        <div class="row mt-2 p-3">
+                            <button class="btn btn-lg blueBtn">
+                                <span class="col-6">Devam Et</span>
+                                <span class="col-6 float-end">1.200,00 TL</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Order Summary End -->
+        </div>
+    </div>
+    <!-- Content End -->
+    <!-- Modal Start -->
+    <div class="modal fade" id="chooseDiffrentShop" tabindex="-1" aria-labelledby="chooseDiffrentShopLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title w-100 text-center" id="chooseDiffrentShopLabel">Mağaza Seç</div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <span class="storeInformationText ps-4 mb-4">Lütfen siparişinizi teslim alacağınız
+                                mağazayı
+                                seçiniz. </span>
+                        </div>
+                        <!-- Scroll Store Start -->
+                        <div class="storeList">
+                            <!-- Modal Store 1 Start -->
+                            <div class="row p-3 ">
+                                <div class="card" style="min-height:7rem;height: 7rem;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-2 p-2">
+                                                <div class="custom-radios custom-radios-modal">
+                                                    <div>
+                                                        <input type="radio" id="chooseStoreModal-1"
+                                                            name="chooseStoreModal" value="chooseStoreModal-1">
+                                                        <label for="chooseStoreModal-1">
+                                                            <span>
+                                                                <img class="check-icon check-icon-modal "
+                                                                    src="assets/img/check-mark.svg" alt="Checked Icon">
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row storeInformationTitle">Kızıltoprak Mağazası</div>
+                                                <div class="row storeInformationText">Turkey, İstanbul, Sancaktepe, Emek
+                                                    Mah., Ordu Cad., 12</div>
+                                            </div>
+                                            <div class="col-3 storeInformationTitle text-center mt-2">Haritada Gör</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Store 1 End -->
+                            <!-- Modal Store 2 Start -->
+                            <div class="row p-3 ">
+                                <div class="card selectedCard" style="min-height:7rem;height: 7rem;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-2 p-2">
+                                                <div class="custom-radios custom-radios-modal">
+                                                    <div>
+                                                        <input type="radio" id="chooseStoreModal-2"
+                                                            name="chooseStoreModal" value="chooseStoreModal-2" checked>
+                                                        <label for="chooseStoreModal-2">
+                                                            <span>
+                                                                <img class="check-icon check-icon-modal "
+                                                                    src="assets/img/check-mark.svg" alt="Checked Icon">
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row storeInformationTitle">Sancaktepe Mağazası</div>
+                                                <div class="row storeInformationText">Turkey, İstanbul, Sancaktepe,
+                                                    Meclis
+                                                    Mah., Cemal Gürsel Cad.</div>
+                                            </div>
+                                            <div class="col-3 storeInformationTitle text-center mt-2">Haritada Gör</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Store 2 End -->
+                        </div>
+                        <!-- Scroll Store End -->
+                    </div>
+                    <div class="row p-4">
+                        <button type="button" class="btn blueBtn continue align-bottom">Devam Et</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/main.min.js"></script>
+</body>
+
+</html>

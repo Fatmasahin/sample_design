@@ -1,0 +1,314 @@
+body {
+    background: #f1f1f1;
+  }
+  .modal-header{
+background: #015BAA;
+text-align: center;
+font-family: Nunito;
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+color: white;
+
+  }
+  .storeInformationText{
+    font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+  }
+  .storeInformationTitle{
+    font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+color: #005BAA;
+  }
+  .blueBtn{
+    background:  #005BAA;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+  }
+.tax{
+  font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #55677A;
+}
+.blueOutlineBtn{
+font-size: 0.8rem;
+ width: 10rem;
+ border-color: #005BAA;
+ color: #005BAA;
+}
+.blueOutlineBtn:hover{
+  font-size: 0.8rem;
+   width: 10rem;
+   background: #005BAA;
+  }
+.taxPrice{
+  font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+color: #005BAA;
+}
+.deliveryFree{
+  font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #A7AEB7;
+}
+.btn:hover{
+  color:white;
+}
+.plasticBag{
+  font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #A7AEB7;
+}
+.deliveryFreePrice{
+  font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #005BAA;
+}
+.specialDiscount{
+  font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #7BC952;
+}
+.plasticBagFreePrice{
+  font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: #005BAA;
+}
+  hr{
+   color: #E5E5E5;
+  }
+.summaryOrder{  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  color: #005BAA;
+}
+.itemsInCart{font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #005BAA;
+}
+.continue{
+  font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+}
+.fade{
+  background-color: #000000cf;
+}
+  .selectedButton{
+      background: #7BC952;
+  }
+  .check-icon {
+    width: 24px;
+    margin-bottom: 7px;
+    color: #fff;
+    filter: invert(100%);
+  }
+  .check-icon-modal {
+    width: 15px;
+    margin-bottom: 17px;
+  }
+  .custom-radios input[type=radio]:checked + label span img {
+    opacity: 1;
+  
+  }
+  .custom-radios {
+    text-align: center;
+    text-align: center;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+  }
+  .custom-radios div {
+    display: inline-block;
+  }
+  .custom-radios input[type=radio] {
+    display: none;
+  }
+  .custom-radios input[type=radio] + label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  .custom-radios input[type=radio] + label span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #bbdbf8;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 44px;
+  }
+  .storeList{
+    height: 15rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 0.5rem;
+  }
+  .custom-radios-modal input[type=radio] + label span {
+    width: 30px;
+    height: 30px;
+  }
+  .custom-radios input[type=radio] + label span img {
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .custom-radios input[type=radio]:checked + label span {
+      background-color: #2ecc71;
+      border: 2px solid #FFFFFF;
+  } 
+  .address{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #55677A;
+
+  }
+  .selectedCard{
+    border-color: #7BC952;
+  }
+  .editDelete a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .titleAddress{
+      color: #025BAA;
+      font-size: 14px;
+  }
+  .phoneNumber{
+      color: #025BAA;
+      font-size: 14px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: normal;
+  }
+  .card{
+    min-height: 13rem;
+  }
+  .adressInfo{
+      color: #025BAA;
+font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+  }
+  .nav.nav-tabs
+  {box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+  .tab-content{
+    border-radius: 0px 0px 6px 6px;
+  }
+  .nav-link.active{
+    color: #025BAA !important;
+    background:#fff !important;
+  }
+  .nav-link{
+    background:#ebeae8 !important;
+    color:#666666 !important;
+  }
+  .stepper {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    margin: 0px;
+  }
+  .stepper::before {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    height: 100%;
+    content: "";
+    width: calc(100% - 20px);
+    background: #083c76;
+  }
+  
+  .stepper__item {
+    color: #6aa2dd;
+    flex: 100%;
+    padding: 20px 20px 20px 40px;
+    background-color: #0e4681;
+    margin: 0 0 0 -17px;
+    -webkit-clip-path: polygon(20px 50%, 0% 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 0% 100%);
+  }
+  .stepper__item.current {
+    background: #165ba9;
+    font-weight: bold;
+    color: white;
+ 
+  }
+  .stepper__item:first-child {
+    border-radius: 5px 0px 0px 5px;
+    padding: 20px;
+    -webkit-clip-path: polygon(0% 0%, calc(100% - 20px) 0%, 100% 50%, calc(100% - 20px) 100%, 0% 100%);
+    margin:0px
+  }
+  .stepper__item:last-child {
+    border-radius: 0px 5px 5px 0px;
+    -webkit-clip-path: polygon(20px 50%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .numberCircle {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 1px 4px 1px 4px;
+    margin: 4px 5px 5px 5px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    background: #256299;
+  }
+  
+  .currentCircle {
+    background: #0e4681;
+    font-weight: bold;
+  }
+.addressTitle{
+    font-family: Nunito;
+font-style: normal;
+font-weight: bold;font-size: 30px;
+color:#666666;
+}
+.deliveryTitle
+{   font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #005BAA;
+}
+
